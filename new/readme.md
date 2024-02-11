@@ -3,5 +3,6 @@
   - Created Home page
   - Created About Page
   - Added products and their prize
-  - Added CSS
-  - Added JavaScript  
+  - Addes Javascript 
+  - Addes Css
+  - Added Functions
