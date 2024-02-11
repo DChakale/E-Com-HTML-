@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <link rel="shortcut icon"type="x-icon"href="D:\study\new/icon.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,300;0,400;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+  <title>D-Store | Ecommerce Website Design</title>
+  <link rel="stylesheet"href="style.css">
+ </head>
+ <body>
+     <div class="header">     
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="indeex.html">
+                <img src="C:\study\new/photos/cart.jfif"width="70px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="indeex.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <img src="C:\study\new\images/menu.png"class="menu-icon"onclick="menutoggle()">
+        </div>        
+     </div>
+    </div> 
+    <!------------ fetured products ------------>
+          <div class="small-container">
+              <h2 class="title">Featured Product</h2>
+              <div class="row">
+                  <div class="col-4">
+                     <a href="product-detaile.html"><img src="C:\study\new\images/product-1.jpg"></a>
+                     <a href="product-detaile.html"><h4>Red Printed T-Shirt</h4></a>
+                     <p>Rs.350.00</p>
+                  </div>
+                  <div class="col-4">
+                    <a href="product-k2-detaile.html"><img src="C:\study\new\photos/kid-a1.jpg"></a>
+                    <a href="product-k2-detaile.html"><h4>YK Marvel T-Shirt</h4></a>
+                    <p>Rs.299</p>
+                </div>
+                <div class="col-4">
+                  <a href="product-k1-detaile.html"><img src="C:\study\new\photos/kid-1.jpg"></a>
+                  <a href="product-k1-detaile.html"><h4>Sangria Lehenga Choli</h4></a>
+                  <p>Rs.599</p>
+                </div>
+                <div class="col-4">
+                    <a href="product-k12-detaile.html"><img src="C:\study\new\photos/woman-h1.jpg"></a>
+                    <a href="product-k12-detaile.html"><h4>Swtantra Chanderi Saree</h4></a>                    
+                    <p>Rs.2789</p>
+                </div>
+              </div>
+              <h2 class="title">Latest Product</h2>
+              <div class="row">    
+              <div class="col-4">
+                <a href="product-k11-detaile.html"><img src="C:\study\new\photos/woman-g1.jpg"></a>
+                <a href="product-k11-detaile.html"><h4>Soch Woman Black Saree</h4></a>                  
+                  <p>Rs.2999</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="product-k7-detaile.html"><img src="C:\study\new\photos/woman-c1.jpg"></a>
+                    <a href="product-k7-detaile.html"><h4>Indo Era Kurta Palazzo With Dupatta Set</h4></a>                  
+                  <p>Rs.1539</p>
+              </div>
+              <div class="col-4">
+                <a href="product-k10-detaile.html"><img src="C:\study\new\photos/woman-f1.jpg"></a>
+                <a href="product-k10-detaile.html"><h4>VASTRANAND Zari Silk Blend Saree</h4></a>                  
+                  <p>Rs.1884</p>
+              </div>              
+            </div>
+          </div>     
+     <!----=====================js for toggle menu===========-->
+     <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+         function menutoggle(){
+             if(MenuItems.style.maxHeight == "0px")
+             {
+                MenuItems.style.maxHeight = "200px";
+             }
+             else
+             {
+                MenuItems.style.maxHeight = "0px";
+             }
+         }
+     </script>
+
+ </body>
+</html>
