@@ -5,3 +5,4 @@
   - Added products and their prize
   - Added CSS
   - Added JavaScript  
+  - Added Functions
