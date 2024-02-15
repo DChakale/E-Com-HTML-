@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <link rel="shortcut icon"type="x-icon"href="C:\study\new/icon.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,300;0,400;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+  <title>Product Detaile_k11- D-Store</title>
+  <link rel="stylesheet"href="style.css">
+ </head>
+ <body>     
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\study\new/photos/cart.jfif"width="70px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="indeex.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <img src="C:\study\new\images/menu.png"class="menu-icon"onclick="menutoggle()">
+        </div>  
+     </div>
+     <!---------single product details------->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="C:\study\new\photos/woman-g1.jpg"width="100%"id="ProductImg">                    
+                     <div class="small-img-row">
+                          <div class="small-img-col">
+                              <img src="C:\study\new\photos/woman-g2.jpg"width="100%"class="small-img">
+                          </div>
+                          <div class="small-img-col">
+                            <img src="C:\study\new\photos/woman-g3.jpg"width="100%"class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="C:\study\new\photos/woman-g4.jpg"width="100%"class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="C:\study\new\photos/woman-g5.jpg"width="100%"class="small-img">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2">
+                    <a href="indeex.html"><p>Home </a>/ Womaen</p>
+                    <h1>Soch</h1>
+                    <h4>Women Black Sarees</h4>
+                    <h4>Rs.2999</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number"value="1">
+                    <a href=""class="btn">Add To Cart</a>
+
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <h3>Design Detaile</h3>
+                    <p>Black saree <br>
+                        Embellished saree with embellished border <br>
+                        Has beads and stones detail <br><br>
+                        The saree does not come with a blouse piece <br>
+                        The model is wearing a blouse for modelling purpose only
+                    </p>
+                    <h3>Size & Fit</h3>
+                      <br>
+                      <p>Length: 5.5 metres plus 0.8 metre blouse piece</p>
+                      <p>Width: 1.06 metres (approx.)</p>
+                      
+                    <h3>Material & Care</h3>
+                    <br>                     
+                    <p>Dry-clean</p>                       
+                </div>
+            </div>
+        </div>
+     <!----=====================js for toggle menu===========-->
+     <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+         function menutoggle(){
+             if(MenuItems.style.maxHeight == "0px")
+             {
+                MenuItems.style.maxHeight = "200px";
+             }
+             else
+             {
+                MenuItems.style.maxHeight = "0px";
+             }
+         }
+     </script>
+     <!---==================js for product gallary===============-->
+     <script>
+         var ProductImg = document.getElementById("ProductImg");
+         var SmallImg =document.getElementsByClassName("small-img");
+         SmallImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+         SmallImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         }
+         SmallImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;
+         }
+         SmallImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+     </script>
+
+ </body>
+</html>
